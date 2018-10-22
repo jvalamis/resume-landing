@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Jan Vincent Alamis</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0-alpha1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <link rel='stylesheet' type='text/css' href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700'>
+</head>
+
+<body>
+    <div class="container content">
+        <div class="av">
+            <div class="profile"></div>
+        </div>
+
+        <div class="headline">
+            <h1 class="headline">Jan Vincent Alamis</h1>
+            <h3 class="description">Full Stack Software Engineer</h3>
+        </div>
+
+        <div class="contact">
+            <a href="mailto:jvalamis@gmail.com" target="_blank"><i class="mail fa fa-envelope icon fa-2x"></i></a>
+            <a href="https://github.com/jvalamis" target="_blank"><i class="github icon fa fa-github fa-2x"></i></a>
+            <!-- <a href="https://www.linkedin.com/in/kevin-kolz-03306128" target="_blank"><i class="linkedin icon fa fa-linkedin-square fa-2x"></i></a>
+            <a href="https://twitter.com/sqeezon" target="_blank"><i class="fa fa-twitter-square icon fa-2x"
+                    aria-hidden="true"></i></a> -->
+        </div>
+
+        <div style="text-align:center;font-size:1.5em">
+            <p class="personal-info"><a target="_blank" style="cursor:pointer" id="about-link">About Me</a> | <a target="_blank"
+                    href="https://jvalamis.github.io/">Resume</a></p>
+        </div>
+
+        <div id="about">
+            <p>
+                I am a full stack software engineer and graduate of Operation Spark. I am a passionate developer and I
+                take great pride in my work. In my spare time I am an avid aquaculturist, video game fanatic, and
+                science fiction and fantasy nerd.
+            </p>
+        </div>
+    </div>
+</body>
+<script>
+    var aboutElement = document.getElementById("about");
+    var toggleAbout = function () {
+        if (aboutElement.classList.contains('active')) {
+            aboutElement.className = "";
+        } else {
+            aboutElement.className = "active";
+        }
+    };
+    document.getElementById("about-link").addEventListener("click", toggleAbout);
+</script>
+
+</html>
